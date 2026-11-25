@@ -1,0 +1,70 @@
+/* الخلفية الكحلية الداكنة الموحدة للتطبيق */
+html,
+body,
+#root {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #060b16;
+  background-image:
+    radial-gradient(circle at 18% 12%, rgba(29, 78, 216, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 82% 28%, rgba(14, 165, 233, 0.1) 0%, transparent 42%),
+    linear-gradient(180deg, #070d1b 0%, #050913 100%);
+  color: #f8fafc;
+}
+
+/* جعل جميع حاويات الصفحات والأقسام الداخلية شفافة لتظهر خلفية التطبيق */
+.home-page,
+.home-body,
+.home-main,
+.home-articles-section,
+.courses-page,
+.firstaid-page,
+.ambulance-page {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* الشريط العلوي والقائمة الجانبية */
+.home-topbar,
+.home-sidebar {
+  background-color: rgba(7, 13, 27, 0.92) !important;
+  border-color: rgba(148, 163, 184, 0.16) !important;
+  color: #f8fafc !important;
+}
+
+.home-sidebar a,
+.home-sidebar button,
+.home-sidebar span,
+.home-topbar span {
+  color: #e2e8f0;
+}
+
+.home-sidebar .is-active,
+.home-sidebar button.active {
+  color: #ffffff !important;
+}
+
+.firstaid-video-box,
+.firstaid-card,
+.courses-card,
+.course-card {
+  background-color: rgba(11, 19, 38, 0.88) !important;
+  border-color: rgba(148, 163, 184, 0.16) !important;
+  color: #f8fafc !important;
+}
+
+.home-main h1,
+.home-main h2,
+.home-main h3,
+.home-articles-title,
+.home-view-all,
+.firstaid-crumb-current,
+.ambulance-crumb-current,
+.courses-page h1,
+.courses-page h2,
+.courses-page h3,
+.firstaid-page h1,
+.firstaid-page h2,
+.firstaid-page h3 {
+  color: #f8fafc !important;
+}

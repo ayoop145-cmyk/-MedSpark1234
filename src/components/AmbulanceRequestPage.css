@@ -1,0 +1,383 @@
+.ambulance-page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.ambulance-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.ambulance-crumb-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #38bdf8;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ambulance-crumb-link:hover {
+  text-decoration: underline;
+}
+
+.ambulance-crumb-current {
+  color: #f8fafc;
+}
+
+.ambulance-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  min-height: 460px;
+  background: linear-gradient(125deg, #070d1b 0%, #0b1326 55%, #060b16 100%);
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.3);
+}
+
+.ambulance-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ambulance-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(6, 11, 22, 0.22) 0%,
+    rgba(7, 13, 27, 0.58) 55%,
+    rgba(6, 11, 22, 0.9) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ambulance-content {
+  position: relative;
+  z-index: 2;
+  padding: 18px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ambulance-header-banner {
+  background: linear-gradient(95deg, #991b1b 0%, #dc2626 48%, #b91c1c 100%);
+  border-radius: 20px;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(153, 27, 27, 0.35);
+}
+
+.ambulance-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ambulance-header-icon {
+  font-size: 42px;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.ambulance-header-texts {
+  text-align: right;
+}
+
+.ambulance-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.15;
+}
+
+.ambulance-subtitle {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fee2e2;
+}
+
+.ambulance-ecg-line {
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.ambulance-body-row {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.ambulance-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  width: 310px;
+  max-width: 100%;
+}
+
+.ambulance-location-pill {
+  width: 100%;
+  background: rgba(255, 228, 230, 0.94);
+  border: 1px solid #fecdd3;
+  border-radius: 16px;
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  color: #1e293b;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+  transition: transform 0.15s ease;
+}
+
+.ambulance-location-pill:hover {
+  transform: translateY(-1px);
+}
+
+.ambulance-loc-icon {
+  font-size: 19px;
+}
+
+.ambulance-case-box {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+
+.ambulance-case-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.ambulance-heart-icon {
+  font-size: 18px;
+}
+
+.ambulance-case-value {
+  font-size: 22px;
+  font-weight: 900;
+  color: #0f172a;
+  text-align: right;
+}
+
+.ambulance-submit-btn {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  background: linear-gradient(90deg, #dc2626 0%, #ef4444 100%);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(220, 38, 38, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ambulance-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(220, 38, 38, 0.5);
+}
+
+.ambulance-phone-icon {
+  font-size: 18px;
+}
+
+.ambulance-footer-note {
+  margin: 2px auto 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f8fafc;
+  background: rgba(15, 23, 42, 0.85);
+  padding: 5px 12px;
+  border-radius: 10px;
+}
+
+.ambulance-sent-alert {
+  margin: 4px 0 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: rgba(22, 163, 74, 0.2);
+  color: #dcfce7;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.ambulance-inside-guide {
+  background: rgba(7, 13, 27, 0.76);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 18px;
+  padding: 16px 18px;
+  color: #f8fafc;
+}
+
+.ambulance-inside-guide-title {
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: right;
+}
+
+.ambulance-steps-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.ambulance-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #f1f5f9;
+  text-align: right;
+}
+
+.ambulance-step-num {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+
+.ambulance-video-card {
+  background: rgba(11, 19, 38, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 20px;
+  padding: 18px 20px;
+  color: #f8fafc;
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.35);
+}
+
+.ambulance-section-title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #f8fafc;
+  text-align: right;
+}
+
+.ambulance-video-frame-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #050913;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.ambulance-video-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.ambulance-video-placeholder {
+  min-height: 200px;
+  border-radius: 14px;
+  border: 1px dashed rgba(148, 163, 184, 0.35);
+  background: rgba(6, 11, 22, 0.7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.ambulance-video-badge {
+  background: rgba(220, 38, 38, 0.2);
+  color: #fca5a5;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.ambulance-video-placeholder-text {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #cbd5e1;
+}
+
+.ambulance-video-placeholder-text code {
+  color: #7dd3fc;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+@media (max-width: 720px) {
+  .ambulance-header-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ambulance-controls {
+    width: 100%;
+  }
+}
